@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-family: cursive; */
+}
+
+body {
+    /* background: linear-gradient(to right, #74ebd5, #acb6e5); */
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+}
+
+.quotes-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.quotes {
+    width: 40%;
+    height: auto;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.author-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: -25rem;
+    color: #fff;
+}
+
+.New-quote {
+    padding: 1.2rem 3rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: #000;
+    background: #ffd700;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.New-quote:hover {
+    color: #fff;
+    transform: scale(1.05);
+    background-color: #ff9900;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment-colon img {
+    width: 10%;
+    position: absolute;
+    top: 10rem;
+    bottom: 0;
+    left: 30rem;
+    right: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .comment-colon img {
+        position: absolute;
+        top: 11rem;
+        bottom: 0;
+        left: 24rem;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .quotes {
+        width: 45%;
+        height: auto;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}  
+
+@media (max-width: 992px) {
+    .comment-colon img {
+        position: absolute;
+        top: 12rem;
+        bottom: 0;
+        left: 20rem;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .quotes {
+        width: 45%;
+        height: auto;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}    
+
+@media (max-width: 768px) {
+    .comment-colon img {
+        position: absolute;
+        top: 13.5rem;
+        bottom: 0;
+        left: 11.5rem;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .quotes {
+        width: 55%;
+        height: auto;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}    
+
+@media (max-width: 576px) {
+    .comment-colon img {
+        width: 20%;
+        position: absolute;
+        top: 12rem;
+        bottom: 0;
+        left: 3rem;
+        right: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .quotes, p{
+        width: 70%;
+        font-size: 0.5rem;
+        height: auto;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .quotes-container {
+        width: 100%;
+    }
+
+    html {
+        font-size: 0.9rem;
+    }
+}    
