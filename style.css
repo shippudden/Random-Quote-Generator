@@ -5,17 +5,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* font-family: cursive; */
 }
 
 body {
-    /* background: linear-gradient(to right, #74ebd5, #acb6e5); */
-
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    animation: gradient-animation 10s ease infinite;
+    background-size: 200% 200%;
+}
 
-    /* background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+/* Animation keyframes */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0% 50%; /* End position, loop back */
+    }
 }
 
 .quotes-container {
