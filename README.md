@@ -11,4 +11,4 @@ HTML: Provides the structure of the web page.
 CSS: Handles the styling, including the animated gradient background and responsive design.
 JavaScript: Powers the random quote generation functionality.
 
-You can access the live demo [here](https://codepen.io/grealish/pen/KKOgMgX)
+You can access the live demo [here](https://random-quote-generator-six-liard.vercel.app/)
